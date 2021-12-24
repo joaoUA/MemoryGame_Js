@@ -45,8 +45,9 @@ header {
 	width: $card-width;
 	height: $card-height;
 	background-color: $primary-color;
-	line-height: $card-height;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&:hover {
 		cursor: pointer;
@@ -55,6 +56,13 @@ header {
 }
 
 .face {
+	visibility: hidden;
+	width: max-content;
 	color: $highlight;
 	border: $accent-color;
+	font-size: 3em;
+}
+
+.card-up {
+	background-color: lighten($primary-color, 10%);
 }
