@@ -1,0 +1,60 @@
+///Font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+///Colors
+$base-color: rgb(24, 19, 34);
+$primary-color: #14213d;
+$accent-color: #fca311;
+$highlight: #e5e5e5;
+
+///Sizes
+$card-height: 128px;
+$card-width: 96px;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $base-color;
+	color: $highlight;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	background-color: $primary-color;
+	padding: 1em;
+	text-align: center;
+}
+
+#board {
+	margin: 1em auto;
+	width: fit-content;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 0.2em;
+	background-color: $accent-color;
+	padding: 0.2em;
+	border-radius: 0.2em;
+}
+
+.card {
+	width: $card-width;
+	height: $card-height;
+	background-color: $primary-color;
+	line-height: $card-height;
+	text-align: center;
+
+	&:hover {
+		cursor: pointer;
+		background-color: lighten($primary-color, 10%);
+	}
+}
+
+.face {
+	color: $highlight;
+	border: $accent-color;
+}
