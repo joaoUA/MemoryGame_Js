@@ -66,3 +66,9 @@ header {
 .card-up {
 	background-color: lighten($primary-color, 10%);
 }
+
+#result {
+	visibility: hidden;
+	text-align: center;
+	font-size: 1.7em;
+}

@@ -103,5 +103,6 @@ function isEndGame() {
 	return true;
 }
 function displayEndGame() {
-	console.log("Done!");
+	const resultMessage = document.getElementById("result");
+	resultMessage.style.visibility = "visible";
 }
